@@ -10,18 +10,25 @@
 <main>
 <nav><a href="./">Notch Dock</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
 <h1>Privacy policy</h1>
-<p class="muted">Last updated October 31, 2026</p>
-<p>Notch Dock runs on your PC. It has no account, no analytics, no ads and no tracking, and the developer never receives your data. Everything the app shows is read on your PC and kept there, except for the few lookups below, which go straight from your PC to public services so the app can show weather, lyrics and cover art.</p>
+<p class="muted">Last updated November 14, 2026</p>
+<p>Notch Dock runs on your PC. It has no account, no analytics, no ads and no tracking, and the developer never receives your data. Everything the app shows is read on your PC and kept there, except for the few lookups below, which go straight from your PC to public services so the app can show weather, lyrics and cover art, and the questions you choose to send to an AI service from the Ask tab.</p>
 
 <h2>What stays on your PC</h2>
 <div class="wrap"><table>
 <tr><th>Data</th><th>Why the app reads it</th><th>How long it is kept</th></tr>
-<tr><td>Clipboard text and images</td><td>Clipboard history</td><td>In memory until you quit, unless you save an item. Items copied from password managers are skipped.</td></tr>
+<tr><td>Clipboard text and images</td><td>Clipboard history</td><td>In memory until you quit, unless you save an item or turn on "Keep after restart" (Notch Pro), which keeps it in an encrypted file in the app's folder on your PC. Items copied from password managers are skipped.</td></tr>
 <tr><td>Notifications from other apps (app name, title, text)</td><td>Banners and the Notifications tab</td><td>Until you clear them or quit</td></tr>
 <tr><td>Calendar events</td><td>Calendar tab and meeting reminders</td><td>Imported calendars are saved in the app's folder until you remove them</td></tr>
 <tr><td>Camera picture</td><td>The Mirror button</td><td>Shown on screen only. Never recorded or saved.</td></tr>
 <tr><td>Microphone and camera in-use status</td><td>The mic and camera dots</td><td>Not kept</td></tr>
 <tr><td>Now playing (song, artist, album, cover art)</td><td>Media controls</td><td>Not kept</td></tr>
+<tr><td>Nearby Wi-Fi network names and signal strength</td><td>The Wi-Fi list, so you can join a network</td><td>Not kept. Windows asks for location permission before any app can read Wi-Fi names; Notch Dock never reads or stores your location.</td></tr>
+<tr><td>Network traffic totals (bytes, not content)</td><td>The network speed display</td><td>Not kept</td></tr>
+<tr><td>Time since your last mouse or keyboard input</td><td>Break reminders, to know when you've taken a break</td><td>Not kept</td></tr>
+<tr><td>The color of one screen pixel, only while you use the color picker</td><td>Copying a color's hex code</td><td>Copied to your clipboard. No screenshot is taken or saved.</td></tr>
+<tr><td>Claude Code permission requests and status (tool name, command or file path, project folder name), only if you turn this on</td><td>Allow or deny Claude Code's requests from the notch</td><td>Not kept. Claude Code sends these to Notch Dock over a private connection that stays on your PC.</td></tr>
+<tr><td>AI service keys you enter</td><td>The Ask tab</td><td>Encrypted in the app's folder so only your Windows account can read them, until you remove them</td></tr>
+<tr><td>Teleprompter script</td><td>The teleprompter</td><td>In the app's storage on your PC until you change it</td></tr>
 <tr><td>Files you drop on the shelf, notes, settings</td><td>Shelf, Notes, Settings</td><td>In the app's folder until you remove them or uninstall</td></tr>
 </table></div>
 
@@ -33,19 +40,20 @@
 <tr><td>The title, artist and album of the song playing</td><td>LRCLIB</td><td>Synced lyrics, only if lyrics are turned on</td></tr>
 <tr><td>The title and artist of the song playing</td><td>Apple iTunes Search</td><td>Cover art and song length for players that do not share them with Windows</td></tr>
 <tr><td>Calendar links you add</td><td>The calendar service in the link (for example Google)</td><td>To download that calendar</td></tr>
+<tr><td>The questions and text you type in the Ask tab, and the conversation so far, only when you press Ask or Translate</td><td>The AI service you choose in Settings, using your own key: Anthropic (Claude), OpenAI or Google (Gemini). If you choose Ollama or another service on your own PC, it stays on your PC.</td><td>To answer or translate. That service's own terms and privacy policy apply to what you send it. The Ask tab is off until you turn it on, and Notch Dock does not save the conversation.</td></tr>
 <tr><td>A Microsoft sign-in, only if you choose to connect Outlook</td><td>Microsoft</td><td>To read your Outlook calendar. The sign-in token is kept on your PC.</td></tr>
 </table></div>
-<p>These services receive your IP address like any website does, and their own privacy policies apply. Notch Dock does not send them your name, email, files or clipboard. Purchases of Notch Pro are handled by the Microsoft Store, and the developer only sees totals that Microsoft reports.</p>
+<p>These services receive your IP address like any website does, and their own privacy policies apply. Notch Dock does not send them your name, email, files or clipboard, apart from anything you type or paste into the Ask tab yourself. Purchases of Notch Pro are handled by the Microsoft Store, and the developer only sees totals that Microsoft reports.</p>
 
 <h2>Your controls</h2>
-<p>Every feature has its own switch in Settings, so you can turn off clipboard history, notifications, calendar, lyrics, weather or the camera button at any time. Clear clipboard and notifications from their tabs. Uninstalling the app removes its folder and everything in it.</p>
+<p>Every feature has its own switch in Settings, so you can turn off clipboard history, notifications, calendar, lyrics, weather, the camera button, the Ask tab or Claude Code at any time. You can also withdraw location permission in Windows Settings, which only hides Wi-Fi names in the Wi-Fi list. Clear clipboard and notifications from their tabs. Uninstalling the app removes its folder and everything in it.</p>
 
 <h2>Children</h2>
 <p>Notch Dock does not knowingly collect information from anyone, including children under 13.</p>
 
 <h2>Changes and questions</h2>
 <p>If a new feature changes what the app reads or sends, this page will be updated before that version ships. Questions go through the <a href="support.html">support page</a>.</p>
-<footer>Notch Dock is an independent app and is not affiliated with Apple or Microsoft.</footer>
+<footer>Notch Dock is an independent app and is not affiliated with Apple, Microsoft, Anthropic, OpenAI or Google.</footer>
 </main>
 </body>
 </html>
